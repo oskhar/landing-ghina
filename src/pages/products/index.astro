@@ -12,6 +12,8 @@ import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import { SITE } from "@data/constants";
 import ProductCard from "@components/sections/pricing/ProductCard.astro";
+import ClientsSection from "@components/sections/landing/ClientsSection.astro";
+import { brandData } from "@/data_files/constants";
 
 // Fetching all the product related content and sorting it by main.id
 const product: CollectionEntry<"products">[] = (
@@ -129,31 +131,6 @@ const ogTitle = "Hardware Tools | Ghina Multiprima";
     inLanguage: "en-US",
   }}
 >
-  <div
-    class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
-  >
-    <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
-      <div class="flex items-center gap-12">
-        <h1
-          class="text-2xl font-bold tracking-tight text-balance text-neutral-800 md:text-4xl md:leading-tight dark:text-neutral-200"
-        >
-          {title}
-        </h1>
-        {
-          subTitle && (
-            <p class="hidden max-w-(--breakpoint-sm) text-pretty text-neutral-600 md:block dark:text-neutral-400">
-              {subTitle}
-            </p>
-          )
-        }
-      </div>
-      <PrimaryCTA title="Customer Stories" url="#testimonials" noArrow={true} />
-    </div>
-    {
-      /* Displaying products in alternating styles. Alternative product gets different card styling.
-    Maps through all product entries and displays them with either CardSmall or CardWide based on their position. */
-    }
-  </div>
   {/* Features statistics section */}
   <FeaturesStatsAlt
     title="Kenapa Pilih Ghina Multiprima?"
@@ -165,18 +142,23 @@ const ogTitle = "Hardware Tools | Ghina Multiprima";
     ]}
   />
   {/* Testimonials section */}
+  <ClientsSection
+    title="Brand Produk"
+    subTitle="Berikut adalah beberapa brand yang tersedia"
+    partners={brandData}
+  />
+  {/* Testimonials section */}
   <div class="mb-20 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
     {
       products.map((product) => (
-        <a href={product.link} class="block">
           <ProductCard
             name={product.name}
             price={product.price}
             image={product.image}
             description={product.description}
             channel={product.channel}
+            link={product.link}
           />
-        </a>
       ))
     }
   </div></MainLayout
