@@ -1,0 +1,10 @@
+---
+// Tidak ada props khusus, tapi kita terima class agar bisa dikustomisasi dari luar
+const { class: className = "" } = Astro.props;
+---
+
+<img
+  src="/images/logo.png"
+  alt="CV Ghina Multiprima"
+  class={className}
+/>
