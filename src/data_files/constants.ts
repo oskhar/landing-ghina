@@ -1,14 +1,13 @@
 import ogImageSrc from "@images/social.png";
 
 export const SITE = {
-  title: "ScrewFast",
-  tagline: "Top-quality Hardware Tools",
+  title: "CCTV - Ghina Multiprima",
+  tagline: "Top-quality CCTV",
   description:
-    "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
-  description_short:
-    "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
-  url: "https://screwfast.uk",
-  author: "Emil Gulamov",
+    "Tingkatkan keamanan properti Anda ke level berikutnya dengan teknologi CCTV tercanggih. Nikmati gambar sejernih kristal, akses pemantauan real-time dari smartphone, dan fitur deteksi cerdas (AI). Jelajahi koleksi kamera keamanan modern kami sekarang!",
+  description_short: "Keamanan Anda, Prioritas Kami. Solusi CCTV Terlengkap.",
+  url: "https://www.ghinamultiprima.co.id/images/logo.png",
+  author: "oskhar",
 };
 
 export const SEO = {
@@ -35,7 +34,7 @@ export const OG = {
   locale: "en_US",
   type: "website",
   url: SITE.url,
-  title: `${SITE.title}: : Hardware Tools & Construction Services`,
+  title: `${SITE.title}: : Top-quality CCTV`,
   description:
     "Equip your projects with ScrewFast's top-quality hardware tools and expert construction services. Trusted by industry leaders, ScrewFast offers simplicity, affordability, and reliability. Experience the difference with user-centric design and cutting-edge tools. Start exploring now!",
   image: ogImageSrc,
