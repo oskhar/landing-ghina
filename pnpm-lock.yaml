@@ -42,8 +42,8 @@ importers:
         specifier: ^7.2.0
         version: 7.2.0
       lenis:
-        specifier: ^1.3.3
-        version: 1.3.3
+        specifier: ^1.3.13
+        version: 1.3.13
       preline:
         specifier: ^3.0.1
         version: 3.0.1
@@ -1625,8 +1625,8 @@ packages:
     resolution: {integrity: sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==}
     engines: {node: '>= 8'}
 
-  lenis@1.3.3:
-    resolution: {integrity: sha512-DOopj/UKHS54E9l2g4BOpDUvsyvkd1zkv+ECtHxQ9Fto8ozzKSz7MccqT+KOyG0ABA/OHXZ7l9INx0peUoQ8rQ==}
+  lenis@1.3.13:
+    resolution: {integrity: sha512-9FTVlAm2PA82JHnFKWgzJkuxlG7orJneVHqUDhZvVPAQDduEVxlVtXRTNgdhERVR5MUX1iDrRaklBvHbVhxQpg==}
     peerDependencies:
       '@nuxt/kit': '>=3.0.0'
       react: '>=17.0.0'
@@ -2327,6 +2327,7 @@ packages:
   sitemap@8.0.0:
     resolution: {integrity: sha512-+AbdxhM9kJsHtruUF39bwS/B0Fytw6Fr1o4ZAIAEqA6cke2xcoO2GleBw9Zw7nRzILVEgz7zBM5GiTJjie1G9A==}
     engines: {node: '>=14.0.0', npm: '>=6.0.0'}
+    deprecated: 'SECURITY: Multiple vulnerabilities fixed in 8.0.1 (XML injection, path traversal, command injection, protocol injection). Upgrade immediately: npm install sitemap@8.0.1'
     hasBin: true
 
   slash@5.1.0:
@@ -4559,7 +4560,7 @@ snapshots:
 
   klona@2.0.6: {}
 
-  lenis@1.3.3: {}
+  lenis@1.3.13: {}
 
   lightningcss-darwin-arm64@1.30.1:
     optional: true
